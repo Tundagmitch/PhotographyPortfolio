@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(http://tinyurl.com/3hwfhacj);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position:left; /* Corrected position value */
+    background-image: url(http://tinyurl.com/2c5reswt);
+}
+
+.logo img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    float: left;
+}
+
+header img {
+    display: inline-block;
+    width: 80px;
+    height: auto;
+    margin: 0 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1f1f1d;
+}
+
+main {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-image: url(http://tinyurl.com/2c5reswt);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
